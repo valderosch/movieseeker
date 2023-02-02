@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import MovieCard from "./Components/MovieCard";
-import './App.css';
+import './styles/App.scss';
 import SearchIcon from './search.svg';
 
 const API_URL = 'http://www.omdbapi.com?apikey=ddf18bce';
@@ -12,7 +12,7 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("Driver");
   }, []);
 
   const searchMovies = async (title) => {
